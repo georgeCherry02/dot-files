@@ -1,0 +1,24 @@
+# enable rmi shortcut
+alias rmi='rm -i'
+cd ~
+set -o noclobber
+alias c='clear'
+alias vim='nvim'
+
+# Git aliases
+alias gs='git status'
+alias ga='git add'
+alias gau='git add -u *'
+alias gc='git commit'
+alias gbd='git branch -d'
+alias gph='git push'
+alias grm='git rm'
+alias gmv='git mv'
+
+# Docker aliases
+alias dcr="docker-compose run --rm"
+alias dcb="docker-compose build"
+alias dcu="docker-compose up"
+alias dcd="docker-compose down"
+alias dce="docker-compose exec"
+alias dcp="docker-compose ps"
