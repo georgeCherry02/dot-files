@@ -23,3 +23,7 @@ vim.keymap.set("n", "<leader>V", "<c-v>")
 
 -- Clear highlight
 vim.keymap.set("n", "<Esc><Esc>", ":noh<CR>")
+
+-- Because I'm some sort of psychopath
+vim.keymap.set("n", "*", "#")
+vim.keymap.set("n", "#", "*")
