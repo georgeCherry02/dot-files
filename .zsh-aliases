@@ -29,6 +29,6 @@ alias tmux="tmux -u"
 alias fetch-deps='sudo apt-get update && apt-get install $(control-file-dependencies -f debian/control --scope source-packages) --upgrade'
 
 # CMake tools
-alias gen-cc='cmake -B build/ -S . --DCMAKE_EXPORT_COMPILE_COMMANDS=1'
+alias gen-cc='cmake -B build/ -S . -DCMAKE_EXPORT_COMPILE_COMMANDS=1'
 alias bdt='cmake --build build/ -j8 && pushd build && ctest -V && popd'
 alias bbdt='../ && bdt'
