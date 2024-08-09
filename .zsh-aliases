@@ -31,3 +31,4 @@ alias fetch-deps='sudo apt-get update && apt-get install $(control-file-dependen
 # CMake tools
 alias gen-cc='cmake -B build/ -S . --DCMAKE_EXPORT_COMPILE_COMMANDS=1'
 alias bdt='cmake --build build/ -j8 && pushd build && ctest -V && popd'
+alias bbdt='../ && bdt'
